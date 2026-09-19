@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080910">
+
+<title>Happy Birthday, Darlin </title>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080910;
+    color: #f5edf2;
+    font-family: Georgia, "Times New Roman", serif;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: inherit;
+}
+
+section {
+    padding: 90px 20px;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================
+   OPENING
+========================= */
+
+.intro {
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            #30202d 0%,
+            #15111b 42%,
+            #080910 75%
+        );
+}
+
+.intro-content {
+    max-width: 700px;
+    padding: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.small-heading {
+    color: #d996b5;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.intro h1 {
+    font-size: clamp(3.2rem, 13vw, 7rem);
+    line-height: .9;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.darlin {
+    color: #f2a9c7;
+
+    text-shadow:
+        0 0 35px rgba(242,169,199,.25);
+}
+
+.intro-message {
+    max-width: 520px;
+    margin: auto;
+
+    color: #cfc2ca;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.btn {
+    margin-top: 30px;
+
+    padding: 14px 28px;
+
+    border: 1px solid #d98eaf;
+
+    background: rgba(217,142,175,.08);
+
+    color: #ffdce9;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background: #d98eaf;
+
+    color: #160c12;
+
+    transform: translateY(-3px);
+}
+
+.floating-heart {
+    position: absolute;
+
+    color: rgba(242,169,199,.16);
+
+    font-size: 28px;
+
+    animation:
+        floating 8s infinite ease-in-out;
+
+    pointer-events: none;
+}
+
+@keyframes floating {
+
+    0%,100% {
+        transform:
+            translateY(0)
+            rotate(0);
+    }
+
+    50% {
+        transform:
+            translateY(-60px)
+            rotate(15deg);
+    }
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section-inner {
+    max-width: 850px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+
+    font-weight: normal;
+
+    font-size:
+        clamp(2.2rem, 8vw, 3.2rem);
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+    background:
+        linear-gradient(
+            145deg,
+            #17131b,
+            #0f0e14
+        );
+
+    border: 1px solid #35242f;
+
+    border-radius: 22px;
+
+    padding:
+        clamp(25px, 6vw, 55px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.3);
+}
+
+.letter p {
+    color: #ddd1d8;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin-bottom: 22px;
+}
+
+.signature {
+    margin-top: 35px;
+
+    color: #eea4c2;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   POEM
+========================= */
+
+.poem-section {
+    background: #0d0d14;
+}
+
+.poem-title {
+    text-align: center;
+
+    font-size:
+        clamp(2rem, 7vw, 3rem);
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+.poem-subtitle {
+    text-align: center;
+
+    color: #9d8e97;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    margin-bottom: 45px;
+}
+
+.poem-box {
+    max-width: 680px;
+
+    margin: auto;
+
+    padding: 45px 25px;
+
+    border-left: 1px solid #b46e8d;
+
+    border-right: 1px solid #b46e8d;
+
+    text-align: center;
+}
+
+.poem-box p {
+    color: #d9cbd3;
+
+    font-size: 19px;
+
+    line-height: 2.05;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   GAMES
+========================= */
+
+.games {
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #241625,
+            transparent 35%
+        ),
+        #080910;
+}
+
+.game-card {
+    background: #141119;
+
+    border: 1px solid #30212b;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+}
+
+.game-card h3 {
+    color: #efa7c4;
+
+    font-weight: normal;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.game-description {
+    color: #a99ca5;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   HEART GAME
+========================= */
+
+#heartGame {
+    height: 330px;
+
+    border: 1px solid #392632;
+
+    border-radius: 15px;
+
+    background: #0b0a10;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.game-heart {
+    position: absolute;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    transition:
+        transform .15s;
+}
+
+.game-heart:hover {
+    transform: scale(1.3);
+}
+
+.score {
+    color: #e5b0c6;
+
+    font-family: Arial, sans-serif;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   MEMORY GAME
+========================= */
+
+.memory-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+
+    max-width: 430px;
+
+    margin: auto;
+}
+
+.memory-card {
+    aspect-ratio: 1;
+
+    border:
+        1px solid #4b2d3a;
+
+    background: #211721;
+
+    color: transparent;
+
+    border-radius: 12px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.memory-card.flipped,
+.memory-card.matched {
+    background: #3c2231;
+
+    color: #f3aec8;
+}
+
+
+/* =========================
+   QUIZ
+========================= */
+
+.question {
+    color: #eee1e7;
+
+    font-size: 21px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+.answers {
+    display: grid;
+
+    gap: 10px;
+}
+
+.answer {
+    background: #211820;
+
+    border:
+        1px solid #3d2934;
+
+    color: #d9cbd2;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: .2s;
+
+    font-size: 15px;
+}
+
+.answer:hover {
+    border-color: #dc91b1;
+
+    transform:
+        translateX(3px);
+}
+
+#quizResult {
+    margin-top: 20px;
+
+    color: #f2a7c5;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #321b29 0%,
+            #100c13 60%
+        );
+}
+
+.final h2 {
+    font-size:
+        clamp(2.8rem, 11vw, 5.5rem);
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+.final-text {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #d7cbd1;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+}
+
+.footer {
+    background: #06070b;
+
+    color: #655862;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+    position: fixed;
+
+    width: 8px;
+    height: 8px;
+
+    top: -10px;
+
+    z-index: 9999;
+
+    pointer-events: none;
+
+    animation:
+        fall 3s linear forwards;
+}
+
+@keyframes fall {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 70px 15px;
+    }
+
+    .letter p {
+        font-size: 16px;
+    }
+
+    .poem-box p {
+        font-size: 17px;
+    }
+
+    .memory-grid {
+        gap: 7px;
+    }
+
+    #heartGame {
+        height: 280px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     OPENING
+================================================== -->
+
+<div class="screen intro">
+
+    <div
+        class="floating-heart"
+        style="left:8%;top:20%;">
+        ♡
+    </div>
+
+    <div
+        class="floating-heart"
+        style="left:80%;top:15%;animation-delay:1s;">
+        ♥
+    </div>
+
+    <div
+        class="floating-heart"
+        style="left:20%;top:75%;animation-delay:2s;">
+        ♡
+    </div>
+
+    <div
+        class="floating-heart"
+        style="left:75%;top:70%;animation-delay:3s;">
+        ♥
+    </div>
+
+
+    <div class="intro-content">
+
+        <div class="small-heading">
+            for someone very special
+        </div>
+
+
+        <h1>
+
+            Happy Birthday,<br>
+
+            <span class="darlin">
+                Darlin 
+            </span>
+
+        </h1>
+
+
+        <p class="intro-message">
+
+            Sixteen already.
+
+            I hope today gives you the kind of happiness
+            you deserve — the kind that stays even after
+            the birthday candles are gone.
+
+            And yes... I made all of this for you.
+            So please explore everything. 
+
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="openLetter()">
+
+            Open your surprise ♡
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     LETTER
+================================================== -->
+
+<section id="letterSection">
+
+    <div class="section-inner">
+
+        <h2 class="section-title">
+            A letter for you.
+        </h2>
+
+
+        <div class="letter">
+
+            <p>
+                Happy birthday, Mutu. 
+            </p>
+
+
+            <p>
+                You're 16 now, and honestly, I don't know
+                where all the time went. It feels like somehow
+                between all our conversations, random jokes,
+                little moments and everything else, you became
+                someone I genuinely care about.
+            </p>
+
+
+            <p>
+                We're not even in the same class. You're in 11th
+                and I'm in 12th. And college is basically the one
+                place where we actually get to see each other.
+                Maybe that's why even the smallest moments there
+                mean more to me than they probably should.
+            </p>
+
+
+            <p>
+                Sometimes it's just seeing you for a few minutes,
+                talking for a little while, or catching a random
+                smile from you. Nothing huge happens, but somehow
+                those tiny things can turn an ordinary college day
+                into a day I'll remember.
+            </p>
+
+
+            <p>
+                I wish I could give you every good thing you deserve.
+                I hope this year brings you new memories, genuine
+                happiness, people who make you feel loved, and
+                countless reasons to smile.
+            </p>
+
+
+            <p>
+                And even though we can't just meet whenever we want,
+                I'm grateful for every moment we do get.
+                I'll always have a soft spot for those college days,
+                because they're where I get to see you.
+            </p>
+
+
+            <p>
+                So today, on your 16th birthday, I just want you
+                to know that I'm really glad you exist.
+                I'm really glad our paths crossed.
+                And I'm really glad I got to know you.
+            </p>
+
+
+            <p>
+                Happy birthday, Mutu.
+                I hope you have the most beautiful day. 
+            </p>
+
+
+            <div class="signature">
+                — Your bro forever ♡
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     POEM
+================================================== -->
+
+<section class="poem-section">
+
+    <div class="section-inner">
+
+
+        <h2 class="poem-title">
+            Between Your 11th and My 12th 
+        </h2>
+
+
+        <div class="poem-subtitle">
+            a little something for my mutu
+        </div>
+
+
+        <div class="poem-box">
+
+            <p>
+
+                Between your 11th and my 12th,<br>
+                somehow I found you,<br>
+                and suddenly college<br>
+                became a little more worth coming to.<br><br>
+
+
+                We don't get all day,<br>
+                we don't get every moment,<br>
+                sometimes we barely get enough time<br>
+                to say everything we wanted.<br><br>
+
+
+                But then I see you,<br>
+                and somehow a normal day<br>
+                doesn't feel so normal anymore.<br><br>
+
+
+                Maybe it's your smile,<br>
+                maybe it's the way you talk,<br>
+                or maybe I'm just a little stupid<br>
+                when it comes to you. <br><br>
+
+
+                And when college ends<br>
+                and we go our separate ways,<br>
+                I already know I'll be waiting<br>
+                for the next day I get to see you.<br><br>
+
+
+                Outside those college walls,<br>
+                the world keeps us apart,<br>
+                but inside those few hours,<br>
+                you're there.<br><br>
+
+
+                And among all the people<br>
+                I could've met,<br>
+                I'm really glad<br>
+                it was you.<br><br>
+
+
+                Happy birthday, Mutu. 
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     GAMES
+================================================== -->
+
+<section class="games">
+
+    <div class="section-inner">
+
+
+        <h2 class="section-title">
+            Okay, enough emotions 
+        </h2>
+
+
+
+        <!-- =========================
+             GAME 1
+        ========================= -->
+
+        <div class="game-card">
+
+            <h3>
+                ♡ Catch the Hearts
+            </h3>
+
+
+            <p class="game-description">
+
+                Catch 10 hearts before they disappear.
+
+                Let's see how fast you are. 
+
+            </p>
+
+
+            <div id="heartGame"></div>
+
+
+            <div class="score">
+
+                Score:
+
+                <span id="heartScore">
+                    0
+                </span>
+
+                / 10
+
+            </div>
+
+
+            <button
+                class="btn"
+                onclick="startHeartGame()">
+
+                Start Game
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             GAME 2
+        ========================= -->
+
+        <div class="game-card">
+
+            <h3>
+                ♡ Memory Match
+            </h3>
+
+
+            <p class="game-description">
+
+                Find every matching pair.
+
+                No cheating. 
+
+            </p>
+
+
+            <div
+                class="memory-grid"
+                id="memoryGrid">
+            </div>
+
+
+            <button
+                class="btn"
+                onclick="startMemoryGame()">
+
+                Shuffle & Start
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             GAME 3
+        ========================= -->
+
+        <div class="game-card">
+
+            <h3>
+                ♡ How Well Do You Know Me?
+            </h3>
+
+
+            <p class="game-description">
+
+                Four questions.
+
+                Let's see if you've actually been paying attention. 
+
+            </p>
+
+
+            <div id="quizArea">
+
+                <div
+                    class="question"
+                    id="question">
+                </div>
+
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+
+                <div id="quizResult">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FINAL MESSAGE
+================================================== -->
+
+<section class="screen final">
+
+    <div>
+
+        <div class="small-heading">
+            one last thing
+        </div>
+
+
+        <h2>
+            Happy 16th. 
+        </h2>
+
+
+        <p class="final-text">
+
+            I know this is just a little website,
+
+            but I wanted to give you something
+            that was made just for you.
+
+            Something you could open at midnight,
+            smile at for a while,
+            and hopefully keep as a tiny memory
+            of your 16th birthday.
+
+            I'm really happy you were born, Mutu.
+
+            Keep smiling.
+            Keep being you.
+
+            And have the happiest birthday. 
+
+        </p>
+
+
+        <button
+            class="btn"
+            onclick="celebrate()">
+
+            One Last Surprise 
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<div class="footer">
+
+    Made for you, Mutu ♡
+
+</div>
+
+
+
+<script>
+
+
+/* ==================================================
+   OPEN LETTER
+================================================== */
+
+function openLetter() {
+
+    document
+        .getElementById("letterSection")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+
+/* ==================================================
+   GAME 1 — CATCH HEARTS
+================================================== */
+
+let heartScore = 0;
+
+let heartTimer = null;
+
+
+function startHeartGame() {
+
+    const area =
+        document.getElementById("heartGame");
+
+
+    area.innerHTML = "";
+
+
+    heartScore = 0;
+
+
+    document.getElementById("heartScore")
+        .textContent = "0";
+
+
+    if (heartTimer) {
+
+        clearInterval(heartTimer);
+
+    }
+
+
+    spawnHeart();
+
+
+    heartTimer =
+        setInterval(() => {
+
+            if (heartScore >= 10) {
+
+                clearInterval(heartTimer);
+
+                return;
+
+            }
+
+            spawnHeart();
+
+        }, 900);
+
+}
+
+
+
+function spawnHeart() {
+
+    const area =
+        document.getElementById("heartGame");
+
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className =
+        "game-heart";
+
+
+    heart.textContent =
+        "♥";
+
+
+    const maxX =
+        Math.max(
+            20,
+            area.clientWidth - 45
+        );
+
+
+    const maxY =
+        Math.max(
+            20,
+            area.clientHeight - 45
+        );
+
+
+    heart.style.left =
+        Math.random() * maxX + "px";
+
+
+    heart.style.top =
+        Math.random() * maxY + "px";
+
+
+    heart.onclick = function() {
+
+        heartScore++;
+
+
+        document.getElementById("heartScore")
+            .textContent =
+            heartScore;
+
+
+        heart.remove();
+
+
+        if (heartScore >= 10) {
+
+            clearInterval(heartTimer);
+
+
+            area.innerHTML = `
+
+                <div style="
+                    text-align:center;
+                    padding-top:130px;
+                    color:#f2a8c5;
+                    font-size:20px;
+                ">
+
+                    You won 
+
+                </div>
+
+            `;
+
+        } else {
+
+            spawnHeart();
+
+        }
+
+    };
+
+
+    area.appendChild(heart);
+
+}
+
+
+
+/* ==================================================
+   GAME 2 — MEMORY
+================================================== */
+
+const memorySymbols = [
+
+    "♡", "♡",
+
+    "★", "★",
+
+    "✦", "✦",
+
+    "♥", "♥",
+
+    "☾", "☾",
+
+    "✿", "✿"
+
+];
+
+
+let firstCard = null;
+
+let secondCard = null;
+
+let lockBoard = false;
+
+let matchedCards = 0;
+
+
+function startMemoryGame() {
+
+    const grid =
+        document.getElementById("memoryGrid");
+
+
+    grid.innerHTML = "";
+
+
+    firstCard = null;
+
+    secondCard = null;
+
+    lockBoard = false;
+
+    matchedCards = 0;
+
+
+    const shuffled =
+        [...memorySymbols]
+        .sort(
+            () =>
+                Math.random() - 0.5
+        );
+
+
+    shuffled.forEach(symbol => {
+
+        const card =
+            document.createElement("button");
+
+
+        card.className =
+            "memory-card";
+
+
+        card.textContent =
+            symbol;
+
+
+        card.dataset.symbol =
+            symbol;
+
+
+        card.onclick = () =>
+            flipCard(card);
+
+
+        grid.appendChild(card);
+
+    });
+
+}
+
+
+
+function flipCard(card) {
+
+    if (
+
+        lockBoard ||
+
+        card === firstCard ||
+
+        card.classList.contains("matched")
+
+    ) {
+
+        return;
+
+    }
+
+
+    card.classList.add("flipped");
+
+
+    if (!firstCard) {
+
+        firstCard = card;
+
+        return;
+
+    }
+
+
+    secondCard = card;
+
+
+    checkMatch();
+
+}
+
+
+
+function checkMatch() {
+
+    const isMatch =
+        firstCard.dataset.symbol ===
+        secondCard.dataset.symbol;
+
+
+    if (isMatch) {
+
+        firstCard.classList.add("matched");
+
+        secondCard.classList.add("matched");
+
+
+        matchedCards += 2;
+
+
+        resetMemory();
+
+
+        if (
+            matchedCards ===
+            memorySymbols.length
+        ) {
+
+            setTimeout(() => {
+
+                alert(
+                    "You matched them all! "
+                );
+
+            }, 300);
+
+        }
+
+    } else {
+
+        lockBoard = true;
+
+
+        setTimeout(() => {
+
+            firstCard
+                .classList
+                .remove("flipped");
+
+
+            secondCard
+                .classList
+                .remove("flipped");
+
+
+            resetMemory();
+
+        }, 700);
+
+    }
+
+}
+
+
+
+function resetMemory() {
+
+    firstCard = null;
+
+    secondCard = null;
+
+    lockBoard = false;
+
+}
+
+
+
+/* ==================================================
+   GAME 3 — QUIZ
+================================================== */
+
+const quiz = [
+
+    {
+        question:
+            "When is my birthday?",
+
+        answers: [
+
+            "March 13",
+
+            "April 13",
+
+            "March 31",
+
+            "February 13"
+
+        ],
+
+        correct: 0
+    },
+
+
+    {
+        question:
+            "What's my favourite animal?",
+
+        answers: [
+
+            "Dog",
+
+            "Cat",
+
+            "Wolf",
+
+            "Rabbit"
+
+        ],
+
+        correct: 1
+    },
+
+
+    {
+        question:
+            "What's my favourite colour?",
+
+        answers: [
+
+            "Black",
+
+            "Red",
+
+            "Blue",
+
+            "White"
+
+        ],
+
+        correct: 2
+    },
+
+
+    {
+        question:
+            "What's my favourite flower?",
+
+        answers: [
+
+            "Rose",
+
+            "Sunflower",
+
+            "Lily",
+
+            "Lotus"
+
+        ],
+
+        correct: 3
+    }
+
+];
+
+
+let currentQuestion = 0;
+
+let quizScore = 0;
+
+
+function loadQuestion() {
+
+    const question =
+        quiz[currentQuestion];
+
+
+    document.getElementById("question")
+        .textContent =
+        question.question;
+
+
+    const answers =
+        document.getElementById("answers");
+
+
+    answers.innerHTML = "";
+
+
+    question.answers.forEach(
+        (answer, index) => {
+
+            const button =
+                document.createElement("button");
+
+
+            button.className =
+                "answer";
+
+
+            button.textContent =
+                answer;
+
+
+            button.onclick = () =>
+                answerQuestion(index);
+
+
+            answers.appendChild(button);
+
+        }
+    );
+
+}
+
+
+
+function answerQuestion(index) {
+
+    const question =
+        quiz[currentQuestion];
+
+
+    if (
+        index ===
+        question.correct
+    ) {
+
+        quizScore++;
+
+    }
+
+
+    currentQuestion++;
+
+
+    if (
+        currentQuestion <
+        quiz.length
+    ) {
+
+        loadQuestion();
+
+    } else {
+
+        document.getElementById("question")
+            .textContent =
+            "Quiz complete ";
+
+
+        document.getElementById("answers")
+            .innerHTML = "";
+
+
+        let message;
+
+
+        if (quizScore === 4) {
+
+            message =
+                "4/4  You actually know me.";
+
+        }
+
+        else if (quizScore === 3) {
+
+            message =
+                "3/4  I'll let that slide.";
+
+        }
+
+        else if (quizScore === 2) {
+
+            message =
+                "2/4  We need to talk.";
+
+        }
+
+        else {
+
+            message =
+                "You got " +
+                quizScore +
+                "/4... " +
+                "who even are you? ";
+
+        }
+
+
+        document.getElementById("quizResult")
+            .textContent =
+            message;
+
+    }
+
+}
+
+
+
+/* ==================================================
+   FINAL CONFETTI
+================================================== */
+
+function celebrate() {
+
+    for (
+        let i = 0;
+        i < 120;
+        i++
+    ) {
+
+        const piece =
+            document.createElement("div");
+
+
+        piece.className =
+            "confetti";
+
+
+        piece.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        piece.style.animationDuration =
+            (
+                2 +
+                Math.random() * 3
+            ) +
+            "s";
+
+
+        piece.style.background =
+            [
+
+                "#f3a6c4",
+
+                "#ffffff",
+
+                "#d9a4bb",
+
+                "#b97998"
+
+            ][
+                Math.floor(
+                    Math.random() * 4
+                )
+            ];
+
+
+        document.body.appendChild(piece);
+
+
+        setTimeout(() => {
+
+            piece.remove();
+
+        }, 5000);
+
+    }
+
+}
+
+
+
+/* ==================================================
+   START QUIZ
+================================================== */
+
+loadQuestion();
+
+
+</script>
+
+</body>
+</html>
